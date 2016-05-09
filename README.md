@@ -13,6 +13,9 @@ Runs within the terminal. Keeps score along the way.
 #### Todo
 * Use figlet/toilet for larger display
 * Fall back mode when unicode is not supported
+* Also track time along with score
+* Calculate speed
+* More forgiving, and show hearts to keep track of mistakes
 
 
 

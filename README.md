@@ -1,7 +1,8 @@
 ### Just a little fun exercise for vim practice
 * Runs within the terminal. Keeps score along the way.
 * Test your reflexes!
-* Made giant the default option. Seems to be more playable that way 
+* Default is unicode arrows. If your terminal doesn't support that, there are two other options you can try
+* Try the other options anyway. They are fun too.
 
 #### Dependencies
 * getch - pypi package
@@ -36,5 +37,3 @@
 - Or the giant option
 
 #### Feel free to fork and give a star if you enjoy it! Thanks!!
-
-

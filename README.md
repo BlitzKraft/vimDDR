@@ -11,6 +11,12 @@
 * Keeps score
 * Unforgiving - one mistake and game is over
 
+#### Usage
+* Clone the repo
+* `cd` to the directory
+* `./game.py` 
+* Enjoy
+
 #### Todo
 - [x] Use figlet/toilet for larger display (has known bug #1)
 - [x] Fall back mode when unicode is not supported

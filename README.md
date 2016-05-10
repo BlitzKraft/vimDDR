@@ -1,4 +1,4 @@
-### Just a little fun excercise for vim practice
+### Just a little fun exercise for vim practice
 * Runs within the terminal. Keeps score along the way.
 * Made giant the default option. Seems to be more playable that way 
 
@@ -14,7 +14,7 @@
 #### Usage
 * Clone the repo
 * `cd` to the directory
-* `./game.py` 
+* `./game.py [ fallback | giant ]` optional args
 * Enjoy
 
 #### Todo
@@ -22,7 +22,7 @@
 - [x] Fall back mode when unicode is not supported
 - [x] Also track time along with score
 - [x] Calculate speed
-- [ ] Accept command line options for fallback and giant mode
+- [x] Accept command line options for fallback and giant mode
 - [ ] More forgiving, and show hearts to keep track of mistakes
 - [ ] Show next arrow(?)
 

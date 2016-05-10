@@ -25,11 +25,11 @@
 * Enjoy
 
 #### Game modes
-* fallback
+* `fallback`
     For terminals/emulators that don't support unicode but still one line per move
-* giant
+* `giant`
     Each arrow is four lines in height. Composed of slashes and backslashed
-* inf
+* `inf`
     infinite game. 'q' to quit. Keeps track of score
 
 #### Todo

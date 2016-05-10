@@ -5,7 +5,8 @@
 # "←..↑..↓..→"
 
 import random
-import getch
+#import getch
+import msvcrt
 import time
 import sys
 
@@ -70,7 +71,7 @@ def gethearts(num):
 while True:
     direction = random.choice(['h','j','k','l'])
     ddr(direction)
-    char = getch.getch()
+    char = msvcrt.getch()
     if inf:
         total = total + 1
     if char == 'q':

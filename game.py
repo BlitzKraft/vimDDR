@@ -7,11 +7,22 @@
 import random
 import getch
 import time
+import sys
 
 score = 0
-
 fallback = False
-giant = True
+giant = False
+
+try:
+    mode = sys.argv[1]
+except IndexError:
+    mode = 'default'
+
+if mode == 'fallback':
+    fallback = True
+elif mode == 'giant':
+    giant = True
+
 
 left  = "←         "
 down  = "   ↓      "

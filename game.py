@@ -5,8 +5,12 @@
 # "←..↑..↓..→"
 
 import random
-#import getch
-import msvcrt
+#Stupid windows
+try:
+    import msvcrt
+except ImportError:
+    import getch
+    msvcrt = getch
 import time
 import sys
 

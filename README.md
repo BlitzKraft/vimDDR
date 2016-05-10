@@ -3,6 +3,7 @@
 * No install required!
 * Test your reflexes!
 * ... and accuracy (only in infinite mode)
+* Now with windows support (testing required, \*nixers needn't panic, it's all the same for you)
 * Default is unicode arrows. If your terminal doesn't support that, there are two other options you can try
 * Try the other options anyway. They are fun too.
 

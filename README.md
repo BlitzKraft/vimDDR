@@ -17,5 +17,6 @@ Runs within the terminal. Keeps score along the way.
 - [x] Calculate speed
 - [ ] More forgiving, and show hearts to keep track of mistakes
 
+#### Feel free to fork and give a star if you enjoy it! Thanks!!
 
 

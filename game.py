@@ -1,8 +1,7 @@
 #! /usr/bin/python3
 # -*- coding: utf-8 -*-
 
-# For best results use source code proj
-# TODO: use a prettifier like toilet/figlet
+# For best results use source code pro
 # Arrows
 # "←..↑..↓..→"
 
@@ -13,6 +12,7 @@ import time
 score = 0
 
 fallback = False
+giant = False
 
 left  = "←         "
 up    = "   ↓      "
@@ -24,6 +24,12 @@ if fallback:
     up    = "   v      "
     down  = "      ^   "
     right = "         >"
+
+if giant:
+    left = "  /\n /\n \\\n  \\\n"
+    down = "    \\      /\n     \\    /\n      \\  /\n       \\/\n"
+    up   = "                /\\\n               /  \\\n              /    \\\n             /      \\\n"
+    right= "                      \\\n                       \\\n                       /\n                      /\n"
 
 start = time.time()
 def ddr(dirn):
@@ -45,6 +51,6 @@ while True:
     score = score + 1
 end = time.time()
 time = round(end - start, 2)
-print("Time : ", time)
+print("Time : ", str(time)+"s")
 print("Score: ", score)
 print("Speed: ", round(score/time,2))

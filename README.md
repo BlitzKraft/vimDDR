@@ -2,6 +2,7 @@
 * Runs within the terminal. Keeps score along the way.
 * No install required!
 * Test your reflexes!
+* ... and accuracy (only in infinite mode)
 * Default is unicode arrows. If your terminal doesn't support that, there are two other options you can try
 * Try the other options anyway. They are fun too.
 
@@ -30,7 +31,7 @@
 * `giant`
     Each arrow is four lines in height. Composed of slashes and backslashed
 * `inf`
-    infinite game. 'q' to quit. Keeps track of score
+    infinite game. 'q' to quit. Keeps track of score and accuracy ( percentage )
 
 #### Todo
 - [x] Use figlet/toilet for larger display (~~has known bug #1~~ fixed)
@@ -39,6 +40,7 @@
 - [x] Calculate speed
 - [x] Accept command line options for fallback and giant mode
 - [x] More forgiving, and show hearts to keep track of mistakes
+- [ ] Log score
 - [ ] Show next arrow(?)
 
 #### Feel free to fork and give a star if you enjoy it! Thanks!!

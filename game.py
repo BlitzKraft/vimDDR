@@ -13,6 +13,7 @@ score = 0
 hearts = 3
 fallback = False
 giant = False
+inf = False
 
 try:
     mode = sys.argv
@@ -20,6 +21,8 @@ except IndexError:
     mode = 'default'
 
 if 'inf' in mode:
+    inf = True
+    total = 0
     hearts = 0
 if 'fallback' in mode:
     fallback = True
@@ -68,6 +71,8 @@ while True:
     direction = random.choice(['h','j','k','l'])
     ddr(direction)
     char = getch.getch()
+    if inf:
+        total = total + 1
     if char == 'q':
         break
     elif char != direction:
@@ -80,4 +85,6 @@ end = time.time()
 time = round(end - start, 2)
 print("Time : ", str(time)+"s")
 print("Score: ", score)
+if inf:
+    print("Accu : ", str(round(score * 100/total, 2))+ '%', "(", score, "of", total, ")")
 print("Speed: ", round(score/time,2))

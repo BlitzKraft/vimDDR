@@ -1,5 +1,6 @@
 ### Just a little fun exercise for vim practice
 * Runs within the terminal. Keeps score along the way.
+* Test your reflexes!
 * Made giant the default option. Seems to be more playable that way 
 
 #### Dependencies
@@ -9,7 +10,8 @@
 
 #### Features
 * Keeps score
-* Unforgiving - one mistake and game is over
+* ~~ Unforgiving - one mistake and game is over ~~
+* Three hearts. Can be easily reverted to old mode by changing the hearts to 1
 
 #### Usage
 * Clone the repo
@@ -23,7 +25,7 @@
 - [x] Also track time along with score
 - [x] Calculate speed
 - [x] Accept command line options for fallback and giant mode
-- [ ] More forgiving, and show hearts to keep track of mistakes
+- [x] More forgiving, and show hearts to keep track of mistakes
 - [ ] Show next arrow(?)
 
 #### If you don't like unicode

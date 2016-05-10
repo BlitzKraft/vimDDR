@@ -15,15 +15,16 @@ fallback = False
 giant = False
 
 try:
-    mode = sys.argv[1]
+    mode = sys.argv
 except IndexError:
     mode = 'default'
 
-if mode == 'fallback':
+if 'inf' in mode:
+    hearts = 0
+if 'fallback' in mode:
     fallback = True
-elif mode == 'giant':
+elif 'giant' in mode:
     giant = True
-
 
 left  = "←         "
 down  = "   ↓      "
@@ -67,7 +68,9 @@ while True:
     direction = random.choice(['h','j','k','l'])
     ddr(direction)
     char = getch.getch()
-    if char != direction:
+    if char == 'q':
+        break
+    elif char != direction:
         hearts = hearts - 1
         if hearts == 0:
             break

@@ -11,11 +11,11 @@ Runs within the terminal. Keeps score along the way.
 * Unforgiving - one mistake and game is over
 
 #### Todo
-* Use figlet/toilet for larger display
-* Fall back mode when unicode is not supported
-~~ * Also track time along with score ~~ Done
-~~ * Calculate speed ~~ Done
-* More forgiving, and show hearts to keep track of mistakes
+- [ ] Use figlet/toilet for larger display
+- [ ] Fall back mode when unicode is not supported
+- [x] Also track time along with score
+- [x] Calculate speed
+- [ ] More forgiving, and show hearts to keep track of mistakes
 
 
 

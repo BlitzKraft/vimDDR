@@ -13,6 +13,9 @@
 * ~~ Unforgiving - one mistake and game is over ~~
 * Three hearts. Can be easily reverted to old mode by changing the hearts to 1
 
+### Screenshot
+![Default mode](./screenshot.png?raw=true "No options given")
+
 #### Usage
 * Clone the repo
 * `cd` to the directory

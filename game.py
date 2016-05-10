@@ -8,14 +8,24 @@
 
 import random
 import getch
+import time
 
 score = 0
+
+fallback = False
 
 left  = "←         "
 up    = "   ↓      "
 down  = "      ↑   "
 right = "         →"
 
+if fallback:
+    left  = "<         "
+    up    = "   v      "
+    down  = "      ^   "
+    right = "         >"
+
+start = time.time()
 def ddr(dirn):
     if dirn == 'h':
         print(left)
@@ -33,5 +43,8 @@ while True:
     if char != direction:
         break
     score = score + 1
-
+end = time.time()
+time = round(end - start, 2)
+print("Time : ", time)
 print("Score: ", score)
+print("Speed: ", round(score/time,2))

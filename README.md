@@ -32,8 +32,4 @@
 - [x] More forgiving, and show hearts to keep track of mistakes
 - [ ] Show next arrow(?)
 
-#### If you don't like unicode
-- Set the fallback option to `True`
-- Or the giant option
-
 #### Feel free to fork and give a star if you enjoy it! Thanks!!

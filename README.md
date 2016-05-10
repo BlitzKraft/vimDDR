@@ -1,5 +1,6 @@
 ### Just a little fun excercise for vim practice
-Runs within the terminal. Keeps score along the way.
+* Runs within the terminal. Keeps score along the way.
+* Made giant the default option. Seems to be more playable that way 
 
 #### Dependencies
 * getch - pypi package

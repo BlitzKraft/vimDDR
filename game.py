@@ -1,5 +1,4 @@
 #! /usr/bin/python3
-# -*- coding: utf-8 -*-
 
 # For best results use source code pro
 # Arrows
@@ -12,7 +11,7 @@ import time
 score = 0
 
 fallback = False
-giant = False
+giant = True
 
 left  = "←         "
 down  = "   ↓      "

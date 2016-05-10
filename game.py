@@ -15,14 +15,14 @@ fallback = False
 giant = False
 
 left  = "←         "
-up    = "   ↓      "
-down  = "      ↑   "
+down  = "   ↓      "
+up    = "      ↑   "
 right = "         →"
 
 if fallback:
     left  = "<         "
-    up    = "   v      "
-    down  = "      ^   "
+    down  = "   v      "
+    up    = "      ^   "
     right = "         >"
 
 if giant:
@@ -36,9 +36,9 @@ def ddr(dirn):
     if dirn == 'h':
         print(left)
     elif dirn == 'j':
-        print(up)
-    elif dirn == 'k':
         print(down)
+    elif dirn == 'k':
+        print(up)
     elif dirn == 'l':
         print(right)
 

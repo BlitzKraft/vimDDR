@@ -15,6 +15,7 @@ Runs within the terminal. Keeps score along the way.
 - [x] Fall back mode when unicode is not supported
 - [x] Also track time along with score
 - [x] Calculate speed
+- [ ] Accept command line options for fallback and giant mode
 - [ ] More forgiving, and show hearts to keep track of mistakes
 - [ ] Show next arrow(?)
 

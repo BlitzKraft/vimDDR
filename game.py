@@ -75,7 +75,7 @@ def gethearts(num):
 while True:
     direction = random.choice(['h','j','k','l'])
     ddr(direction)
-    char = msvcrt.getch()
+    char = msvcrt.getch().lower()
     if inf:
         total = total + 1
     if char == 'q':

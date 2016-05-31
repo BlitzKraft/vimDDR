@@ -24,6 +24,7 @@
 * Clone the repo
 * `cd` to the directory
 * `./game.py [ fallback | giant ] [ inf ]` optional args
+* `./game.py help` to see the above line again
 * Enjoy
 
 #### Game modes
@@ -42,6 +43,6 @@
 - [x] Accept command line options for fallback and giant mode
 - [x] More forgiving, and show hearts to keep track of mistakes
 - [ ] Log score
-- [ ] Show next arrow(?)
+- ~~[ ] Show next arrow(?)~~ Won't implement. (Beyond what I can do at this point)
 
 #### Feel free to fork and give a star if you enjoy it! Thanks!!

@@ -25,6 +25,11 @@ try:
 except IndexError:
     mode = 'default'
 
+if 'help' in mode:
+    print("Usage: ./game.py [ fallback | giant ] [ inf ] ")
+    print("See README for more details.")
+    sys.exit()
+
 if 'inf' in mode:
     inf = True
     total = 0

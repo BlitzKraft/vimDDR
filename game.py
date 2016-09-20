@@ -30,9 +30,9 @@ if 'help' in mode:
     print("See README for more details.")
     sys.exit()
 
+total = 0
 if 'inf' in mode:
     inf = True
-    total = 0
     hearts = 0
 if 'fallback' in mode:
     fallback = True
@@ -81,8 +81,8 @@ while True:
     direction = random.choice(['h','j','k','l'])
     ddr(direction)
     char = msvcrt.getch().lower()
-    if inf:
-        total = total + 1
+    #if inf:
+    total = total + 1
     if char == 'q':
         break
     elif char != direction:
@@ -94,7 +94,7 @@ while True:
 end = time.time()
 time = round(end - start, 2)
 print("Time : ", str(time)+"s")
-print("Score: ", score)
+print("Score: ", score, "/", total + hearts)
 if inf:
     print("Accu : ", str(round(score * 100/total, 2))+ '%', "(", score, "of", total, ")")
 print("Speed: ", round(score/time,2))

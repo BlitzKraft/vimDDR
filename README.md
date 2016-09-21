@@ -2,7 +2,8 @@
 * Runs within the terminal. Keeps score along the way.
 * No install required!
 * Test your reflexes!
-* ... and accuracy (only in infinite mode)
+* ... and accuracy 
+* Keeps log of scores and accuracy.
 * Now with windows support (testing required, \*nixers needn't panic, it's all the same for you)
 * Default is unicode arrows. If your terminal doesn't support that, there are two other options you can try
 * Try the other options anyway. They are fun too.
@@ -10,12 +11,11 @@
 #### Dependencies
 * getch - pypi package
 * python3
-* unicode support in terminal(now optional)
+* msvcrt (windows only)
 
 #### Features
 * Keeps score
-* ~~Unforgiving - one mistake and game is over~~
-* Three hearts. Can be easily reverted to old mode by changing the hearts to 1
+* Logs score and accuracy
 
 ### Screenshot
 ![Default mode](./screenshot.png?raw=true "No options given")
@@ -42,7 +42,6 @@
 - [x] Calculate speed
 - [x] Accept command line options for fallback and giant mode
 - [x] More forgiving, and show hearts to keep track of mistakes
-- [ ] Log score
-- ~~[ ] Show next arrow(?)~~ Won't implement. (Beyond what I can do at this point)
+- [x] Log score
 
 #### Feel free to fork and give a star if you enjoy it! Thanks!!

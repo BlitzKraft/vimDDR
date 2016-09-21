@@ -4,7 +4,9 @@
 # Arrows
 # "←..↑..↓..→"
 
+import datetime
 import random
+import getpass
 #Stupid windows
 try:
     import msvcrt
@@ -15,6 +17,7 @@ import time
 import sys
 
 score = 0
+accu = 0
 hearts = 3
 fallback = False
 giant = False
@@ -91,10 +94,20 @@ while True:
             break
     else:
         score = score + 1
+
+def record_scores():
+    date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    user = getpass.getuser()
+    accu = str(round(score * 100/total, 2))+ '%'
+    outstr = "\t".join([user, str(score), accu, str(time) + "s\t", date])
+    # print(user, score, time, date)
+    with open("scores.txt", "a") as score_file:
+        score_file.write(outstr + "\n")
+
 end = time.time()
 time = round(end - start, 2)
 print("Time : ", str(time)+"s")
-print("Score: ", score, "/", total + hearts)
-if inf:
-    print("Accu : ", str(round(score * 100/total, 2))+ '%', "(", score, "of", total, ")")
-print("Speed: ", round(score/time,2))
+print("Accu : ", accu, "(", score, "of", total, ")")
+print("Speed: ", round(score/time,2), "strokes/sec")
+
+record_scores()

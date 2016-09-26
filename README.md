@@ -43,5 +43,6 @@
 - [x] Accept command line options for fallback and giant mode
 - [x] More forgiving, and show hearts to keep track of mistakes
 - [x] Log score
+- [ ] Get longest streak
 
 #### Feel free to fork and give a star if you enjoy it! Thanks!!

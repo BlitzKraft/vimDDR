@@ -98,16 +98,16 @@ while True:
 def record_scores():
     date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     user = getpass.getuser()
+    global accu
     accu = str(round(score * 100/total, 2))+ '%'
     outstr = "\t".join([user, str(score), accu, str(time) + "s\t", date])
-    # print(user, score, time, date)
     with open("scores.txt", "a") as score_file:
         score_file.write(outstr + "\n")
 
 end = time.time()
 time = round(end - start, 2)
+record_scores()
 print("Time : ", str(time)+"s")
 print("Accu : ", accu, "(", score, "of", total, ")")
 print("Speed: ", round(score/time,2), "strokes/sec")
 
-record_scores()

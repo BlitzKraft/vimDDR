@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+vimddr.egg-info/PKG-INFO
+vimddr.egg-info/SOURCES.txt
+vimddr.egg-info/dependency_links.txt
+vimddr.egg-info/entry_points.txt
+vimddr.egg-info/requires.txt
+vimddr.egg-info/top_level.txt

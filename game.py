@@ -56,10 +56,10 @@ if fallback:
     heart = " <3"
 
 if giant:
-    left = "  /\n /\n \\\n  \\                      "
-    down = "    \\      /\n     \\    /\n      \\  /\n       \\/                "
-    up   = "                /\\\n               /  \\\n              /    \\\n             /      \\    "
-    right= "                      \\\n                       \\\n                       /\n                      /  "
+    left  = "  /\n /\n \\\n  \\                      "
+    down  = "    \\      /\n     \\    /\n      \\  /\n       \\/                "
+    up    = "                /\\\n               /  \\\n              /    \\\n             /      \\    "
+    right = "                      \\\n                       \\\n                       /\n                      /  "
     heart = "<3 "
 
 start = time.time()
@@ -80,20 +80,25 @@ def gethearts(num):
         num = num - 1
     return hc
 
-while True:
-    direction = random.choice(['h','j','k','l'])
-    ddr(direction)
-    char = msvcrt.getch().lower()
-    #if inf:
-    total = total + 1
-    if char == 'q':
-        break
-    elif char != direction:
-        hearts = hearts - 1
-        if hearts == 0:
+def main():
+    while True:
+        direction = random.choice(['h','j','k','l'])
+        ddr(direction)
+        char = msvcrt.getch().lower()
+        #if inf:
+        global total
+        total = total + 1
+        if char == 'q':
             break
-    else:
-        score = score + 1
+        elif char != direction:
+            global hearts
+            hearts = hearts - 1
+            if hearts == 0:
+                break
+        else:
+            global score
+            score = score + 1
+main()
 
 def record_scores():
     date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')

@@ -31,7 +31,7 @@
 * `fallback`
     For terminals/emulators that don't support unicode but still one line per move
 * `giant`
-    Each arrow is four lines in height. Composed of slashes and backslashed
+    Each arrow is four lines in height. Composed of slashes and backslashes.
 * `inf`
     infinite game. 'q' to quit. Keeps track of score and accuracy ( percentage )
 
@@ -44,5 +44,6 @@
 - [x] More forgiving, and show hearts to keep track of mistakes
 - [x] Log score
 - [ ] Get longest streak
+- [ ] Make it installable via pip.
 
 #### Feel free to fork and give a star if you enjoy it! Thanks!!

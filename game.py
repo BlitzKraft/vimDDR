@@ -1,4 +1,4 @@
-#! /usr/bin/python3
+#! /usr/bin/env python3
 
 # For best results use source code pro
 # Arrows
@@ -7,7 +7,7 @@
 import datetime
 import random
 import getpass
-#Stupid windows
+#Stupid windows # <- I agree...
 try:
     import msvcrt
 except ImportError:

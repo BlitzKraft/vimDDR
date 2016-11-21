@@ -19,6 +19,8 @@ import sys
 score = 0
 accu = 0
 hearts = 3
+streak = 0
+long_streak = 0
 fallback = False
 giant = False
 inf = False
@@ -89,10 +91,13 @@ while True:
     if char == 'q':
         break
     elif char != direction:
+        long_streak = max(streak, long_streak)
+        streak = 0
         hearts = hearts - 1
         if hearts == 0:
             break
     else:
+        streak = streak + 1
         score = score + 1
 
 def record_scores():
@@ -100,7 +105,7 @@ def record_scores():
     user = getpass.getuser()
     global accu
     accu = str(round(score * 100/total, 2))+ '%'
-    outstr = "\t".join([user, str(score), accu, str(time) + "s\t", date])
+    outstr = "\t".join([user, str(score), accu, str(long_streak), str(time) + "s\t", date])
     with open("scores.txt", "a") as score_file:
         score_file.write(outstr + "\n")
 
@@ -110,4 +115,5 @@ record_scores()
 print("Time : ", str(time)+"s")
 print("Accu : ", accu, "(", score, "of", total, ")")
 print("Speed: ", round(score/time,2), "strokes/sec")
+print("Longest streak: ", long_streak)
 

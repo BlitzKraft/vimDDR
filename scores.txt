@@ -1,2 +1,2 @@
-User	Score	Accu	Duration	Achieved on
------------------------------------------------------------
+User	Score	Accu	Streak	Duration	Achieved on
+-------------------------------------------------------------------

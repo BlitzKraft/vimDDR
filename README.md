@@ -16,6 +16,7 @@
 #### Features
 * Keeps score
 * Logs score and accuracy
+* Gets longest streak and logs it too!
 
 ### Screenshot
 ![Default mode](./screenshot.png?raw=true "No options given")

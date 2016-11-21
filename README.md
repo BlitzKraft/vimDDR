@@ -43,7 +43,7 @@
 - [x] Accept command line options for fallback and giant mode
 - [x] More forgiving, and show hearts to keep track of mistakes
 - [x] Log score
-- [ ] Get longest streak
+- [x] Get longest streak
 - [ ] Make it installable via pip.
 
 #### Feel free to fork and give a star if you enjoy it! Thanks!!

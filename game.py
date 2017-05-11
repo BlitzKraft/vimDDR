@@ -25,6 +25,7 @@ fallback = False
 giant = False
 inf = False
 ddr = False
+ddro = False
 
 try:
     mode = sys.argv
@@ -46,6 +47,8 @@ elif 'giant' in mode:
     giant = True
 elif 'ddr' in mode:
     ddr = True
+elif 'ddro' in mode:
+    ddro = True
 
 left  = "←         "
 down  = "   ↓      "
@@ -68,10 +71,18 @@ if giant:
     heart = "<3 "
 
 if ddr:
-    left  = "H  |  |  |  "
-    down  = "|  J  |  |  "
-    up    = "|  |  K  |  "
-    right = "|  |  |  L  "
+    left  = "\033[1;31;49mH\033[1;30m  |  |  |  "
+    down  = "|  \033[1;32;49mJ\033[1;30m  |  |  "
+    up    = "|  |  \033[1;33;49mK\033[1;30m  |  "
+    right = "|  |  |  \033[1;34;49mL\033[1;30m  "
+    heart = " <3"
+
+
+if ddro:
+    left  = "\033[1;31;49mO\033[1;30m  |  |  |  "
+    down  = "|  \033[1;32;49mO\033[1;30m  |  |  "
+    up    = "|  |  \033[1;33;49mO\033[1;30m  |  "
+    right = "|  |  |  \033[1;34;49mO\033[1;30m  "
     heart = " <3"
 
 

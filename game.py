@@ -24,6 +24,7 @@ long_streak = 0
 fallback = False
 giant = False
 inf = False
+ddr = False
 
 try:
     mode = sys.argv
@@ -39,10 +40,12 @@ total = 0
 if 'inf' in mode:
     inf = True
     hearts = 0
-if 'fallback' in mode:
+if 'fallback' in mode: 
     fallback = True
 elif 'giant' in mode:
     giant = True
+elif 'ddr' in mode:
+    ddr = True
 
 left  = "←         "
 down  = "   ↓      "
@@ -63,6 +66,14 @@ if giant:
     up   = "                /\\\n               /  \\\n              /    \\\n             /      \\    "
     right= "                      \\\n                       \\\n                       /\n                      /  "
     heart = "<3 "
+
+if ddr:
+    left  = "H  |  |  |  "
+    down  = "|  J  |  |  "
+    up    = "|  |  K  |  "
+    right = "|  |  |  L  "
+    heart = " <3"
+
 
 start = time.time()
 def ddr(dirn):

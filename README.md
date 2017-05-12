@@ -1,4 +1,10 @@
 [![saythanks](https://img.shields.io/badge/say-thanks-ff69b4.svg)](https://saythanks.io/to/BlitzKraft)
+## NEW!! Guitar-hero like option `gtro` and `gtr`
+![Default mode](./guitar.png?raw=true "No options given")
+* `gtr` shows the strings and HJKL keys.
+* `gtro` shows the strings with "O" for buttons
+* Colors!!
+
 ### Just a little fun exercise for vim practice
 * Runs within the terminal. Keeps score along the way.
 * No install required!
